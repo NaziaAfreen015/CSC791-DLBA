@@ -6,4 +6,4 @@ Team Members:
 - Nazia Afreen
 
 
-Work Checklist: [Google Docs Worklow Tab]([url](https://docs.google.com/document/d/1-7VXiNBzViS-27vDwZIT9cfNL3KR1tXnBomOGRBsVzM/edit?tab=t.1zlncuhon30z))
+Work Checklist: [Google Docs Worklow Tab](https://docs.google.com/document/d/1-7VXiNBzViS-27vDwZIT9cfNL3KR1tXnBomOGRBsVzM/edit?tab=t.1zlncuhon30z)
