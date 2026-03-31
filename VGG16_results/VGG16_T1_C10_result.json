@@ -1,0 +1,216 @@
+[
+  {
+    "title": "Parameter share of each region:",
+    "headers": ["Region", "Parameter Share of Total Model"],
+    "data": [
+      ["Early conv", "0.19%"],
+      ["Mid conv", "1.10%"],
+      ["Late conv", "9.66%"],
+      ["Classifier", "89.05%"]
+    ]
+  },
+  {
+    "title": "Conv vs classifier:",
+    "headers": ["Region", "20%", "40%", "60%", "80%"],
+    "data": [
+      ["All features", "6.64%", "13.92%", "22.94%", "37.06%"],
+      ["Classifier", "21.64%", "43.21%", "64.56%", "85.28%"]
+    ]
+  },
+  {
+    "title": "Weighted region sparsity: / Weighted pruning by model region:",
+    "headers": ["Region", "20% Global", "40% Global", "60% Global", "80% Global"],
+    "data": [
+      ["Early conv", "3.25%", "6.78%", "11.25%", "18.49%"],
+      ["Mid conv", "4.71%", "9.91%", "16.43%", "26.89%"],
+      ["Late conv", "6.93%", "14.52%", "23.91%", "38.58%"],
+      ["Classifier", "21.64%", "43.21%", "64.56%", "85.28%"]
+    ]
+  },
+  {
+    "title": "Unweighted region sparsity: / Unweighted average layer sparsity by region:",
+    "headers": ["Region", "20% Global", "40% Global", "60% Global", "80% Global"],
+    "data": [
+      ["Early conv", "2.46%", "5.23%", "8.67%", "14.33%"],
+      ["Mid conv", "4.59%", "9.68%", "16.06%", "26.28%"],
+      ["Late conv", "6.83%", "14.32%", "23.58%", "38.06%"],
+      ["Classifier", "14.26%", "29.04%", "45.02%", "64.36%"]
+    ]
+  },
+  {
+    "title": "Pruning concentration:",
+    "headers": ["Region", "Share of All Pruned Weights at 20%", "Share of All Pruned Weights at 40%", "Share of All Pruned Weights at 60%", "Share of All Pruned Weights at 80%"],
+    "data": [
+      ["Early conv", "0.03%", "0.03%", "0.04%", "0.04%"],
+      ["Mid conv", "0.26%", "0.27%", "0.30%", "0.37%"],
+      ["Late conv", "3.35%", "3.51%", "3.85%", "4.66%"],
+      ["Classifier", "96.36%", "96.19%", "95.81%", "94.93%"]
+    ]
+  },
+  {
+    "title": "Effect of fine-tuning:",
+    "headers": ["Pruning Level", "Global Sparsity", "Pruning-Only Val Loss", "Pruning-Only Val Acc", "Final Val Loss", "Final Val Acc", "Recovery", "Final Test Loss", "Final Test Acc"],
+    "data": [
+      ["20%", "0.2000", "0.2157", "92.24%", "0.2083", "92.44%", "+0.20%", "0.2366", "91.85%"],
+      ["40%", "0.4000", "0.2152", "92.34%", "0.2090", "92.58%", "+0.24%", "0.2393", "91.86%"],
+      ["60%", "0.6000", "0.2234", "92.26%", "0.2066", "92.70%", "+0.44%", "0.2338", "91.98%"],
+      ["80%", "0.8000", "0.3850", "91.06%", "0.2222", "92.38%", "+1.32%", "0.2411", "91.61%"]
+    ]
+  },
+  {
+    "title": "Clean Accuracy by Model:",
+    "headers": ["Model Type", "Clean Accuracy"],
+    "data": [
+      ["Dense", "0.9155"],
+      ["Pruned 20%", "0.9185"],
+      ["Pruned 40%", "0.9186"],
+      ["Pruned 60%", "0.9198"],
+      ["Pruned 80%", "0.9161"]
+    ]
+  },
+  {
+    "title": "Adversarial accuracy (same-model adversarial examples):",
+    "headers": ["Model Variant", "0.0078", "0.0156", "0.0313", "0.0627"],
+    "data": [
+      ["Dense", "0.0735", "0.1234", "0.1426", "0.1457"],
+      ["Pruned 20%", "0.0731", "0.1215", "0.1424", "0.1466"],
+      ["Pruned 40%", "0.0706", "0.1227", "0.1399", "0.1443"],
+      ["Pruned 60%", "0.0730", "0.1204", "0.1396", "0.1430"],
+      ["Pruned 80%", "0.0727", "0.1207", "0.1389", "0.1387"]
+    ]
+  },
+  {
+    "title": "Transferability: Dense → Pruned:",
+    "headers": ["Pruned", "Sparsity 0.0078", "Sparsity 0.0156", "Sparsity 0.0313", "Sparsity 0.0627"],
+    "data": [
+      ["20%", "0.9216", "0.8712", "0.8544", "0.8548"],
+      ["40%", "0.9214", "0.8683", "0.8509", "0.8526"],
+      ["60%", "0.9149", "0.8651", "0.8488", "0.8539"],
+      ["80%", "0.8949", "0.8434", "0.8341", "0.8493"]
+    ]
+  },
+  {
+    "title": "Transferability: Pruned → Dense:",
+    "headers": ["Pruned Sparsity", "0.0078", "0.0156", "0.0313", "0.0627"],
+    "data": [
+      ["20%", "0.9159", "0.8651", "0.8472", "0.8490"],
+      ["40%", "0.9180", "0.8655", "0.8516", "0.8549"],
+      ["60%", "0.9208", "0.8672", "0.8524", "0.8520"],
+      ["80%", "0.9234", "0.8797", "0.8610", "0.8593"]
+    ]
+  },
+  {
+    "title": "Target adversarial accuracy under transfer: Dense → Pruned:",
+    "headers": ["Pruned Sparsity", "0.0078", "0.0156", "0.0313", "0.0627"],
+    "data": [
+      ["20%", "0.0720", "0.1198", "0.1388", "0.1437"],
+      ["40%", "0.0724", "0.1224", "0.1423", "0.1457"],
+      ["60%", "0.0784", "0.1255", "0.1445", "0.1438"],
+      ["80%", "0.0964", "0.1459", "0.1571", "0.1471"]
+    ]
+  },
+  {
+    "title": "Target adversarial accuracy under transfer: Pruned → Dense:",
+    "headers": ["Pruned Sparsity", "0.0078", "0.0156", "0.0313", "0.0627"],
+    "data": [
+      ["20%", "0.0773", "0.1254", "0.1449", "0.1497"],
+      ["40%", "0.0753", "0.1250", "0.1418", "0.1441"],
+      ["60%", "0.0729", "0.1236", "0.1402", "0.1465"],
+      ["80%", "0.0704", "0.1124", "0.1323", "0.1399"]
+    ]
+  },
+  {
+    "title": "FGSM examples breakdown for Dense model:",
+    "headers": ["model_variant", "epsilon", "examples_10_count", "examples_01_count", "examples_000_count", "examples_001_count", "examples_11_count"],
+    "data": [
+      ["Dense", "0.0078", "8421", "1", "184", "660", "734"],
+      ["Dense", "0.0157", "7939", "18", "269", "558", "1216"],
+      ["Dense", "0.0314", "7784", "54", "362", "429", "1371"],
+      ["Dense", "0.0627", "7804", "107", "447", "291", "1351"]
+    ]
+  },
+  {
+    "title": "FGSM examples breakdown for Pruned 20% model:",
+    "headers": ["model_variant", "sparsity", "epsilon", "examples_10_count", "examples_01_count", "examples_000_count", "examples_001_count", "examples_11_count"],
+    "data": [
+      ["Pruned", "20%", "0.0078", "8455", "1", "172", "642", "730"],
+      ["Pruned", "20%", "0.0157", "7983", "13", "256", "546", "1202"],
+      ["Pruned", "20%", "0.0314", "7814", "54", "355", "406", "1371"],
+      ["Pruned", "20%", "0.0627", "7817", "107", "437", "271", "1368"]
+    ]
+  },
+  {
+    "title": "FGSM examples breakdown for Pruned 40% model:",
+    "headers": ["model_variant", "sparsity", "epsilon", "examples_10_count", "examples_01_count", "examples_000_count", "examples_001_count", "examples_11_count"],
+    "data": [
+      ["Pruned 40%", "40.0", "0.0078", "8482", "2", "155", "657", "704"],
+      ["Pruned 40%", "40.0", "0.0157", "7975", "16", "263", "535", "1211"],
+      ["Pruned 40%", "40.0", "0.0314", "7843", "56", "359", "399", "1343"],
+      ["Pruned 40%", "40.0", "0.0627", "7858", "105", "427", "282", "1328"]
+    ]
+  },
+  {
+    "title": "FGSM examples breakdown for Pruned 60% model:",
+    "headers": ["model_variant", "sparsity", "epsilon", "examples_10_count", "examples_01_count", "examples_000_count", "examples_001_count", "examples_11_count"],
+    "data": [
+      ["Pruned 60%", "60.0", "0.0078", "8476", "1", "152", "649", "722"],
+      ["Pruned 60%", "60.0", "0.0157", "8011", "15", "246", "541", "1187"],
+      ["Pruned 60%", "60.0", "0.0314", "7844", "42", "336", "424", "1354"],
+      ["Pruned 60%", "60.0", "0.0627", "7863", "95", "430", "277", "1335"]
+    ]
+  },
+  {
+    "title": "FGSM examples breakdown for Pruned 80% model:",
+    "headers": ["model_variant", "sparsity", "epsilon", "examples_10_count", "examples_01_count", "examples_000_count", "examples_001_count", "examples_11_count"],
+    "data": [
+      ["Pruned 80%", "80.0", "0.0078", "8434", "0", "164", "675", "727"],
+      ["Pruned 80%", "80.0", "0.0157", "7973", "19", "272", "548", "1188"],
+      ["Pruned 80%", "80.0", "0.0314", "7817", "45", "371", "423", "1344"],
+      ["Pruned 80%", "80.0", "0.0627", "7861", "87", "456", "296", "1300"]
+    ]
+  },
+  {
+    "title": "Adversarial accuracy on initially-correct subset:",
+    "headers": ["Model Variant", "0.0078", "0.0156", "0.0313", "0.0627"],
+    "data": [
+      ["Dense", "0.0802", "0.1328", "0.1498", "0.1476"],
+      ["Pruned 20%", "0.0794", "0.1309", "0.1494", "0.1489"],
+      ["Pruned 40%", "0.0766", "0.1319", "0.1462", "0.1446"],
+      ["Pruned 60%", "0.0793", "0.1294", "0.1479", "0.1449"],
+      ["Pruned 80%", "0.0800", "0.1301", "0.1461", "0.1414"]
+    ]
+  },
+  {
+    "title": "Attack success rate:",
+    "headers": ["Model Variant", "0.0078", "0.0156", "0.0313", "0.0627"],
+    "data": [
+      ["Dense", "0.9198", "0.8672", "0.8502", "0.8524"],
+      ["Pruned 20%", "0.9206", "0.8691", "0.8506", "0.8511"],
+      ["Pruned 40%", "0.9234", "0.8681", "0.8538", "0.8554"],
+      ["Pruned 60%", "0.9207", "0.8706", "0.8521", "0.8551"],
+      ["Pruned 80%", "0.9200", "0.8699", "0.8539", "0.8586"]
+    ]
+  },
+  {
+    "title": "Initially correct examples:",
+    "headers": ["Model Variant", "Initially correct examples"],
+    "data": [
+      ["Dense", "9155"],
+      ["Pruned 20%", "9185"],
+      ["Pruned 40%", "9186"],
+      ["Pruned 60%", "9198"],
+      ["Pruned 80%", "9161"]
+    ]
+  },
+  {
+    "title": "Successful attacks:",
+    "headers": ["Model Variant", "0.0078", "0.0156", "0.0313", "0.0627"],
+    "data": [
+      ["Dense", "8421", "7939", "7784", "7804"],
+      ["Pruned 20%", "8456", "7983", "7813", "7817"],
+      ["Pruned 40%", "8482", "7974", "7843", "7858"],
+      ["Pruned 60%", "8469", "8008", "7838", "7865"],
+      ["Pruned 80%", "8428", "7969", "7823", "7866"]
+    ]
+  }
+]
