@@ -1,0 +1,164 @@
+[
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.1,
+        "prune_level": 0.2,
+        "clean_test_acc": 73.04,
+        "clean_acc_drop": -0.4100000000000108,
+        "asr": 97.06,
+        "best_val_acc": 73.14,
+        "measured_sparsity": 0.2000000029704942,
+        "model_path": "pruned_vgg16_cifar100_pr0.10_sparse0.20_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.1,
+        "prune_level": 0.4,
+        "clean_test_acc": 72.59,
+        "clean_acc_drop": 0.03999999999999204,
+        "asr": 96.83,
+        "best_val_acc": 73.04,
+        "measured_sparsity": 0.3999999985147529,
+        "model_path": "pruned_vgg16_cifar100_pr0.10_sparse0.40_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.1,
+        "prune_level": 0.6,
+        "clean_test_acc": 72.4,
+        "clean_acc_drop": 0.22999999999998977,
+        "asr": 97.07,
+        "best_val_acc": 72.84,
+        "measured_sparsity": 0.6000000014852471,
+        "model_path": "pruned_vgg16_cifar100_pr0.10_sparse0.60_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.1,
+        "prune_level": 0.8,
+        "clean_test_acc": 72.6,
+        "clean_acc_drop": 0.030000000000001137,
+        "asr": 96.85,
+        "best_val_acc": 72.8,
+        "measured_sparsity": 0.7999999970295057,
+        "model_path": "pruned_vgg16_cifar100_pr0.10_sparse0.80_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.05,
+        "prune_level": 0.2,
+        "clean_test_acc": 72.8,
+        "clean_acc_drop": -0.1700000000000017,
+        "asr": 94.04,
+        "best_val_acc": 73.64,
+        "measured_sparsity": 0.2000000029704942,
+        "model_path": "pruned_vgg16_cifar100_pr0.05_sparse0.20_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.05,
+        "prune_level": 0.4,
+        "clean_test_acc": 72.91,
+        "clean_acc_drop": -0.28000000000000114,
+        "asr": 95.08,
+        "best_val_acc": 73.94,
+        "measured_sparsity": 0.3999999985147529,
+        "model_path": "pruned_vgg16_cifar100_pr0.05_sparse0.40_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.05,
+        "prune_level": 0.6,
+        "clean_test_acc": 72.97,
+        "clean_acc_drop": -0.3400000000000034,
+        "asr": 93.52,
+        "best_val_acc": 74.16,
+        "measured_sparsity": 0.6000000014852471,
+        "model_path": "pruned_vgg16_cifar100_pr0.05_sparse0.60_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.05,
+        "prune_level": 0.8,
+        "clean_test_acc": 72.51,
+        "clean_acc_drop": 0.11999999999999034,
+        "asr": 93.77,
+        "best_val_acc": 73.2,
+        "measured_sparsity": 0.7999999970295057,
+        "model_path": "pruned_vgg16_cifar100_pr0.05_sparse0.80_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.01,
+        "prune_level": 0.2,
+        "clean_test_acc": 72.88,
+        "clean_acc_drop": -0.25,
+        "asr": 58.58,
+        "best_val_acc": 73.86,
+        "measured_sparsity": 0.2000000029704942,
+        "model_path": "pruned_vgg16_cifar100_pr0.01_sparse0.20_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.01,
+        "prune_level": 0.4,
+        "clean_test_acc": 72.74,
+        "clean_acc_drop": -0.10999999999999943,
+        "asr": 63.97,
+        "best_val_acc": 73.48,
+        "measured_sparsity": 0.3999999985147529,
+        "model_path": "pruned_vgg16_cifar100_pr0.01_sparse0.40_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.01,
+        "prune_level": 0.6,
+        "clean_test_acc": 73.09,
+        "clean_acc_drop": -0.46000000000000796,
+        "asr": 65.18,
+        "best_val_acc": 74.04,
+        "measured_sparsity": 0.6000000014852471,
+        "model_path": "pruned_vgg16_cifar100_pr0.01_sparse0.60_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.01,
+        "prune_level": 0.8,
+        "clean_test_acc": 73.25,
+        "clean_acc_drop": -0.6200000000000045,
+        "asr": 66.73,
+        "best_val_acc": 73.92,
+        "measured_sparsity": 0.7999999970295057,
+        "model_path": "pruned_vgg16_cifar100_pr0.01_sparse0.80_target0.pth"
+    },
+        {
+        "dataset": "cifar100",
+        "poison_rate": 0.1,
+        "prune_level": 0.0,
+        "clean_test_acc": 70.95,
+        "clean_acc_drop": 1.6799999999999926,
+        "asr": 95.46,
+        "best_val_acc": 71.7,
+        "model_path": "/content/drive/MyDrive/DLBA_Project_(1)/Poisoned_Pruned_Models_VGG/poisoned_vgg16_cifar100_pr0.10_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.05,
+        "prune_level": 0.0,
+        "clean_test_acc": 71.33,
+        "clean_acc_drop": 1.2999999999999972,
+        "asr": 91.61,
+        "best_val_acc": 72.34,
+        "model_path": "/content/drive/MyDrive/DLBA_Project_(1)/Poisoned_Pruned_Models_VGG/poisoned_vgg16_cifar100_pr0.05_target0.pth"
+    },
+    {
+        "dataset": "cifar100",
+        "poison_rate": 0.01,
+        "prune_level": 0.0,
+        "clean_test_acc": 71.62,
+        "clean_acc_drop": 1.009999999999991,
+        "asr": 22.66,
+        "best_val_acc": 72.48,
+        "model_path": "/content/drive/MyDrive/DLBA_Project_(1)/Poisoned_Pruned_Models_VGG/poisoned_vgg16_cifar100_pr0.01_target0.pth"
+    }
+]
